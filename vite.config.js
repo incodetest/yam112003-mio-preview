@@ -12,5 +12,5 @@ export default defineConfig(({ command }) => ({
   base:
     command === 'serve'
       ? '/'
-      : (process.env.VITE_BASE || '/yam112003-mio-preview/'),
+      : (process.env.VITE_BASE || '/yam112003-mio-preview2/'),
 }))

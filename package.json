@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && cd dist && git init && git add -A && git commit -m 'deploy' && git push -f https://github.com/incodetest/yam112003-mio-preview.git HEAD:gh-pages && cd .."
+    "deploy": "npm run build && gh-pages -d dist --nojekyll -o github"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "tailwindcss": "^4.2.4",
     "vue": "^3.5.32"
   },
   "devDependencies": {
